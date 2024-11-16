@@ -1,5 +1,5 @@
 # Открываем и читаем файл
-with open('./75/third_task.txt', 'r', encoding='utf-8') as file:
+with open('lab_1/tasks/third_task.txt', 'r', encoding='utf-8') as file:
     rows = file.readlines()
 
 # Создаем список для суммы строк
@@ -24,5 +24,5 @@ for row in rows:
     row_sums.append(int(round(sum(multiple_nums), 0)))
 
 # Записываем результат в файл
-with open('./75/third_task_solve.txt', 'w', encoding='utf-8') as file:
+with open('lab_1/results/third_task_solve.txt', 'w', encoding='utf-8') as file:
     file.write('\n'.join(map(str, row_sums)))
