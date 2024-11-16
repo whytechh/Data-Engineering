@@ -28,7 +28,7 @@ word_dict = Counter(words)
 word_dict = sorted(word_dict.items(), key = lambda x: x[1], reverse=True)
 
 # Сохраняем полученный словарь в отдельный txt файл
-with open('./75/first_task_solve_1.txt', 'w', encoding='utf-8') as file:
+with open('lab_1/results/first_task_solve_1.txt', 'w', encoding='utf-8') as file:
     for key, value in word_dict:
         file.write(f'{key}: {value}\n')
 
@@ -45,5 +45,5 @@ letters_count = sum(1 for letters in text if letters.isalpha())
 # Подсчет доли гласных букв
 chars_ratio = chars_count / letters_count * 100
 
-with open('./75/first_task_solve_2.txt', 'w', encoding='utf-8') as file:
+with open('lab_1/results/first_task_solve_2.txt', 'w', encoding='utf-8') as file:
     file.write(f"Количество гласных: {chars_count}\nДоля гласных: {chars_ratio}")
