@@ -1,7 +1,7 @@
 from collections import Counter
 
 # Открываем и читаем файл
-with open('./75/first_task.txt', 'r', encoding='utf-8') as file:
+with open('lab_1/tasks/first_task.txt', 'r', encoding='utf-8') as file:
     text = file.read()
 
 # Общее задание
