@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Чтение файла
-data = pd.read_csv('./75/fourth_task.txt')
+data = pd.read_csv('lab_1/tasks/fourth_task.txt')
 
 # Удаление колонки
 data_dropped = data.drop('status', axis=1)
@@ -19,10 +19,10 @@ min_value = data['rating'].min()
 data_filtered = data[data['status'] == 'Refunded']
 
 # Сохранение модифицированного csv-файла
-data_filtered.to_csv('./75/fourth_task_solve.csv', index=False, header=True)
+data_filtered.to_csv('lab_1/results/fourth_task_solve.csv', index=False, header=True)
 
 # Сохранение результатов вычислений
-with open("./75/fourth_task_solve.txt", "w") as file:
+with open("lab_1/results/fourth_task_solve.txt", "w") as file:
             file.write(f"Среднее арифметическое по столбцу quantity: {mean_value}\n \
 Максимальное значение по столбцу price: {max_value}\n \
 Минимальное значение по стобцу rating: {min_value}")
