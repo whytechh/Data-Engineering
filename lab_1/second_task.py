@@ -1,7 +1,7 @@
 import math
 
 # Открываем и читаем файл
-with open('./75/second_task.txt', 'r', encoding='utf-8') as file:
+with open('lab_1/tasks/second_task.txt', 'r', encoding='utf-8') as file:
     raws = file.readlines()
 
 # Создаем таблицу с числами
@@ -21,6 +21,6 @@ row_sums = [
 minmax_sum = [max(row_sums), min(row_sums)]
 
 # Сохраняем файл
-with open('./75/second_task_solve.txt', 'w', encoding='utf-8') as file:
+with open('lab_1/results/second_task_solve.txt', 'w', encoding='utf-8') as file:
     file.write('\n'.join(map(str, row_sums)) + '\n')
     file.write('\n'.join(map(str, minmax_sum)))   
